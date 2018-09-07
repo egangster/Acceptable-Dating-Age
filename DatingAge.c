@@ -6,7 +6,7 @@ int main()
 	char cChar[4];
 
 	printf("hello please enter your age: ");
-	gets_s(cChar, 3);
+	gets_s(cChar, 3); // compilable on vs2017 for windows, but won't be on POSIX systems, use gets() instead.
 
 	int age = atoi(cChar);
 	int lowestAcceptableAge = age / 2 + 7;
